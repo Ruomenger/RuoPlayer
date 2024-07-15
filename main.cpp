@@ -1,10 +1,16 @@
 #include <QApplication>
-#include <QPushButton>
+
+#include "Player.h"
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
-    QPushButton button("Hello world!", nullptr);
-    button.resize(200, 100);
-    button.show();
+
+    QCoreApplication::setApplicationName("RuoPlayer");
+    QCoreApplication::setOrganizationName("https://github.com/Ruomenger");
+    QCoreApplication::setApplicationVersion("0.0.1");
+
+    Player player;
+    player.show();
+
     return QApplication::exec();
 }

@@ -15,7 +15,11 @@ find_package(Qt6 COMPONENTS
         REQUIRED
 )
 
-add_executable(RuoPlayer main.cpp)
+add_executable(RuoPlayer
+        main.cpp
+        Player.cpp
+        Player.h
+)
 
 target_link_libraries(RuoPlayer
         Qt::Core
