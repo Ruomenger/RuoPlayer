@@ -16,9 +16,9 @@ find_package(Qt6 COMPONENTS
 )
 
 add_executable(RuoPlayer
-        main.cpp
-        Player.cpp
-        Player.h
+        src/main.cpp
+        src/Player.cpp
+        src/Player.h
 )
 
 target_link_libraries(RuoPlayer
