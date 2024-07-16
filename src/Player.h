@@ -6,7 +6,7 @@
 class Player : public QWidget {
     Q_OBJECT
 
-   public:
+public:
     explicit Player(QWidget *parent = nullptr);
 
     ~Player() = default;
